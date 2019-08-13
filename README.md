@@ -50,3 +50,12 @@ From SqueezeMeta paper: comparison of different methods:
 4.) “Dark Matter” of metatranscriptomics data: how do we use seq’s that don’t align to any reference genome? How to get functional insight into unaligned reads     
 5.) Normalization of expression data based on taxon abundance
 6.) Co-assembly of multiple metagenomes    
+
+## Datasets:    
+Human Stool samples; metagenomic (DNA) and metatranscriptomic (RNA) sequencing from 8 people.     
+https://www.pnas.org/content/pnas/111/22/E2329.full.pdf    
+PRJNA188481    
+    
+Activated sludge (3 samples);metagenomic (DNA) and metatranscriptomic (RNA) sequencing    
+https://www.sciencedirect.com/science/article/pii/S0160412019307603?via%3Dihub    
+PRJNA406858    
