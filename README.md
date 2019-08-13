@@ -1,8 +1,8 @@
 # Metatranscriptomics_Pilot
 A Pilot Project for Read Counts, Novel Transcripts and Population Level Functions in Metatranscriptomes
 
-### BrainStorming:
-### Tools ATM:     
+### BrainStorming
+#### Tools ATM:     
 
 **HUMAnN2**: http://huttenhower.sph.harvard.edu/humann2
 https://www.ncbi.nlm.nih.gov/pubmed/30377376
