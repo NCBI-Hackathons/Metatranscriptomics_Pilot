@@ -23,6 +23,8 @@ https://www.ncbi.nlm.nih.gov/pubmed/29783945
 	*what systems are abundant
 	*what systems/genes are differentially expressed?
 
+![Image description](https://www.biorxiv.org/content/biorxiv/early/2017/09/29/195826/F1.medium.gif)
+
 MetaTrans: http://www.metatrans.org/
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4876386/
 * QC, remove ribosomal
