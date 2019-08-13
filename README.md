@@ -11,6 +11,8 @@ https://www.ncbi.nlm.nih.gov/pubmed/30377376
 * translated-search for unclassified genes
 * gene family and pathway abundance (RPKM)
 
+![Image description](http://huttenhower.sph.harvard.edu/sites/default/files/humann2_diamond_500x500.jpg)
+
 
 SAMSA2: https://transcript.github.io/samsa2/ 
 https://www.ncbi.nlm.nih.gov/pubmed/29783945
