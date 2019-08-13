@@ -1,4 +1,4 @@
-# Metatranscriptomics_Pilot
+# Metatranscriptomics Pilot
 A Pilot Project for Read Counts, Novel Transcripts and Population Level Functions in Metatranscriptomes
 
 ## Tools:     
