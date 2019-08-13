@@ -39,7 +39,7 @@ Metagenomics and metatranscriptomics
 
 ![Image description](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6353838/bin/fmicb-09-03349-g001.jpg)
 
-**Ideas**:    
+# Ideas:    
 1.) Looking for mismatch between DNA and RNA, as in low signal in DNA high in RNA and visa versa.    
 2.) Able to process short OR long read data    
 3.) If methylation data is available, match methylation data with transcription     
