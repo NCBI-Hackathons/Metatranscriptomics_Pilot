@@ -80,3 +80,6 @@ Comparison of DNA and RNA abundance
 3. Which genes (across samples) vary a lot in their expression, but not in their DNA copy number?     
     Same gene has high variance in RNA (and low variance in DNA) across metagenomic samples
 ![Fig3](https://www.pnas.org/content/pnas/111/22/E2329/F6.large.jpg?width=800&height=600&carousel=1)
+    
+4. Is the taxonomic profile we get from MetaTrans similar to one from metagenomic taxonomic profiles reported?    
+
