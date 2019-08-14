@@ -47,7 +47,7 @@ From SqueezeMeta paper: comparison of different methods:
 2.) Able to process short OR long read data    
 3.) If methylation data is available, match methylation data with transcription     
 4.) “Dark Matter” of metatranscriptomics data: how do we use seq’s that don’t align to any reference genome? How to get functional insight into unaligned reads     
-5.) Normalization of expression data based on taxon abundance
+5.) Normalization of expression data based on taxon abundance    
 6.) Co-assembly of multiple metagenomes    
 
 ## Datasets:    
