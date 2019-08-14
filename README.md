@@ -73,6 +73,9 @@ Sample Collection: DNA and RNA collected from the same stool sample, metagenomic
 Comparison of DNA and RNA abundance    
 ![DNAvsRNA](https://www.pnas.org/content/pnas/111/22/E2329/F4.medium.gif)    
     
-*Indentify persisters in a community*    
-*Which genes (in the same sample) are differentially expressed depending on their genetic context?*    
-*Which genes (across samples) vary a lot in their expression, but not in their DNA copy number?* 
+1. Indentify persisters in a community    
+    RNA <<< DNA genome wide for specific organism
+2. Which genes (in the same sample) are differentially expressed depending on their genetic context?    
+    Same gene has high variance in RNA coming from the same species
+3. Which genes (across samples) vary a lot in their expression, but not in their DNA copy number?     
+    Same gene has high variance in RNA (and low variance in DNA) across metagenomic samples
