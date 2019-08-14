@@ -4,7 +4,7 @@ A Pilot Project for scoping an upcoming hackathon focused on metatranscriptomics
 Allissa Dillman    
 
 
-## Tools:     
+## Potential Transcriptomic Tools/Pipelines:     
 
 **HUMAnN2**: http://huttenhower.sph.harvard.edu/humann2
 https://www.ncbi.nlm.nih.gov/pubmed/30377376
