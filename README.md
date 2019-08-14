@@ -43,10 +43,7 @@ Co-assembly of multiple metagenomes simultaneously
 From SqueezeMeta paper: comparison of different methods:    
 ![Comparison table](https://www.frontiersin.org/files/Articles/425882/fmicb-09-03349-HTML/image_m/fmicb-09-03349-t001.jpg)
 ## Ideas:    
-1.) Looking for mismatch between DNA and RNA, as in low signal in DNA high in RNA and visa versa.     
-*Indentify persisters in a community*    
-*Which genes (in the same sample) are differentially expressed depending on their genetic context?*    
-*Which genes (across samples) vary a lot in their expression, but not in their DNA copy number?*    
+1.) Looking for mismatch between DNA and RNA, as in low signal in DNA high in RNA and visa versa.        
 2.) Able to process short OR long read data    
 3.) If methylation data is available, match methylation data with transcription     
 4.) “Dark Matter” of metatranscriptomics data: how do we use seq’s that don’t align to any reference genome? How to get functional insight into unaligned reads     
@@ -75,3 +72,7 @@ Sample Collection: DNA and RNA collected from the same stool sample, metagenomic
     
 Comparison of DNA and RNA abundance    
 ![DNAvsRNA](https://www.pnas.org/content/pnas/111/22/E2329/F4.medium.gif)    
+    
+*Indentify persisters in a community*    
+*Which genes (in the same sample) are differentially expressed depending on their genetic context?*    
+*Which genes (across samples) vary a lot in their expression, but not in their DNA copy number?* 
