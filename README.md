@@ -1,7 +1,9 @@
 # Metatranscriptomics Pilot
 A Pilot Project for scoping an upcoming hackathon focused on metatranscriptomics including topics such as Read Counts, Novel Transcripts and Population Level Functions    
 **Authors:**    
-Allissa Dillman    
+Allissa Dillman  
+Defne Surujon    
+Shurjo Sen    
 
 
 ## Potential Transcriptomic Tools/Pipelines:     
