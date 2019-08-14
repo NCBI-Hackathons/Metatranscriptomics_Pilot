@@ -33,10 +33,10 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4876386/
 
 ![Image description](https://media.nature.com/m685/nature-assets/srep/2016/160523/srep26447/images_hires/srep26447-f1.jpg)
 
-**SqueezeMeta**: https://www.frontiersin.org/articles/10.3389/fmicb.2018.03349/full
-Accommodates nanopore long reads    
-Metagenomics and metatranscriptomics    
-Co-assembly of multiple metagenomes simultaneously    
+**SqueezeMeta**: https://www.frontiersin.org/articles/10.3389/fmicb.2018.03349/full    
+* Accommodates nanopore long reads    
+* Metagenomics and metatranscriptomics    
+* Co-assembly of multiple metagenomes simultaneously    
 
 ![Image description](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6353838/bin/fmicb-09-03349-g001.jpg)
 
