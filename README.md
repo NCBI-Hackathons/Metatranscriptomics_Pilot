@@ -69,3 +69,9 @@ https://ibdmdb.org/
 ## A potential method for DNA/RNA comparison: 
 Relating the metatranscriptome and metagenome of the human gut    
 https://www.pnas.org/content/111/22/E2329.long    
+
+Sample Collection: DNA and RNA collected from the same stool sample, metagenomics and metatranscriptomics processed separately        
+[SampleCollection](https://www.pnas.org/content/pnas/111/22/E2329/F1.medium.gif)    
+    
+Comparison of DNA and RNA abundance    
+[DNAvsRNA](https://www.pnas.org/content/pnas/111/22/E2329/F4.medium.gif)    
