@@ -61,3 +61,7 @@ PRJNA188481
 Activated sludge (3 samples);metagenomic (DNA) and metatranscriptomic (RNA) sequencing    
 https://www.sciencedirect.com/science/article/pii/S0160412019307603?via%3Dihub    
 PRJNA406858    
+
+IBDBMB (The Inflammatory Bowel Disease Multi'omics Database)    
+https://ibdmdb.org/    
+735 MATCHED Metatranscriptomics and Metagenomics datasets from human stool     
