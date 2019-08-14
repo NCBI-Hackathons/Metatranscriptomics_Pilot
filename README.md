@@ -1,5 +1,8 @@
 # Metatranscriptomics Pilot
-A Pilot Project for Read Counts, Novel Transcripts and Population Level Functions in Metatranscriptomes
+A Pilot Project for scoping an upcoming hackathon focused on metatranscriptomics including topics such as Read Counts, Novel Transcripts and Population Level Functions    
+Authors:    
+Allissa Dillman    
+
 
 ## Tools:     
 
