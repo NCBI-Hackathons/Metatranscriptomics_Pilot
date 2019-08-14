@@ -45,6 +45,7 @@ From SqueezeMeta paper: comparison of different methods:
 ## Ideas:    
 1.) Looking for mismatch between DNA and RNA, as in low signal in DNA high in RNA and visa versa.     
 *Indentify persisters in a community*    
+*Which genes (in the same sample) are differentially expressed depending on their genetic context?*    
 2.) Able to process short OR long read data    
 3.) If methylation data is available, match methylation data with transcription     
 4.) “Dark Matter” of metatranscriptomics data: how do we use seq’s that don’t align to any reference genome? How to get functional insight into unaligned reads     
