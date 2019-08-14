@@ -11,7 +11,6 @@ Shurjo Sen
 
 **HUMAnN2**: http://huttenhower.sph.harvard.edu/humann2
 https://www.ncbi.nlm.nih.gov/pubmed/30377376
-*This is aval on Biowulf!
 * ID species
 * map reads to pangenome of found species
 * translated-search for unclassified genes
