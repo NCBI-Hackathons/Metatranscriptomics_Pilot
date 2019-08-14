@@ -75,7 +75,8 @@ Comparison of DNA and RNA abundance
     
 1. Indentify persisters in a community    
     RNA <<< DNA genome wide for specific organism
-2. Which genes (in the same sample) are differentially expressed depending on their genetic context?    
-    Same gene has high variance in RNA coming from the same species
+2. Which genes are differentially expressed depending on their genetic context?    
+    Same gene has high variance in RNA coming from different species in the same sample
 3. Which genes (across samples) vary a lot in their expression, but not in their DNA copy number?     
     Same gene has high variance in RNA (and low variance in DNA) across metagenomic samples
+![Fig3](https://www.pnas.org/content/pnas/111/22/E2329/F6.large.jpg?width=800&height=600&carousel=1)
