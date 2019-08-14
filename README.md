@@ -67,5 +67,5 @@ https://ibdmdb.org/
 735 MATCHED Metatranscriptomics and Metagenomics datasets from human stool  
 
 ## A potential method for DNA/RNA comparison: 
-Relating the metatranscriptome and metagenome of the human gut
-https://www.pnas.org/content/111/22/E2329.long
+Relating the metatranscriptome and metagenome of the human gut    
+https://www.pnas.org/content/111/22/E2329.long    
