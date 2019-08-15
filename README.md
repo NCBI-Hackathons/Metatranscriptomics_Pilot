@@ -65,6 +65,7 @@ From SqueezeMeta paper: comparison of different tools:
 
 ![Bvulgatus](https://github.com/NCBI-Hackathons/Metatranscriptomics_Pilot/blob/master/g__Bacteroides.s__Bacteroides_vulgatus.png?raw=true)     
 Mean RNA and DNA abundances for Bacteroides vulgatus. Each point represents a patient sample. Most patients have lower (relative) amounts of RNA from this organism compared to DNA.     
+[Jupyter notebook - generation of this figure](https://github.com/NCBI-Hackathons/Metatranscriptomics_Pilot/blob/master/Pathways%20MGX%20vs%20MTX.ipynb)    
 
 **2. Which genes/pathways are differentially expressed depending on their genetic context?**    
     Homologs of the same gene may be differentially expressed depending on which bacterial species they appear in, despite being in the same environment. This may result in an oversimplification/misinterpretation of metatranscriptomic data. For example, one gene/pathway may be found in high abundance in two very different samples, due to this gene being upregulated in response to different cues, in different organisms. These two cases of high transcript abundance are not biologically equivalent. 
@@ -73,6 +74,7 @@ Mean RNA and DNA abundances for Bacteroides vulgatus. Each point represents a pa
     Similar to how the same genome in a human can yield vastly different cell types, similar metagenomic compositions in microbial communities can have vastly different transcriptional/functional profiles (Franzosa et al., 2014). While for most genes/pathways there may be a strong correlation between RNA and DNA abundance, there are examples of pathways where DNA abundance does not vary much across samples, but RNA abundance does. 
 ![FUC-RHAMCAT](https://github.com/NCBI-Hackathons/Metatranscriptomics_Pilot/blob/master/FUC-RHAMCAT-PWY.png?raw=true)    
 Fucose-rhamalose catabolism pathway is an example of low variability in terms of DNA abundance, but high variability in RNA abundance.     
+[Jupyter notebook - generation of this figure](https://github.com/NCBI-Hackathons/Metatranscriptomics_Pilot/blob/master/Pathways%20MGX%20vs%20MTX.ipynb)    
 ~~4. Is the taxonomic profile we get from MetaTrans similar to one from metagenomic taxonomic profiles reported?~~    
     The MetaTrans paper shows some differences between 16S rRNA profiles and 16S rDNA profiles. They attribute this to 16S rDNA not being able to capture the "active" microbial community. 
     
@@ -80,7 +82,8 @@ Fucose-rhamalose catabolism pathway is an example of low variability in terms of
     Existing studies aim to classify healthy vs diseased patients based on NGS data (Bang et al., 2019; Pasolli et al., 2016). Early analysis of metatranscriptomic data has has identified differentially expressed pathways in periodontal disease when compared to healthy oral microbial communities (Jorth et al., 2014). Transcriptomic profiling data potentially has richer and more informative features than metagenomic or 16S data; since it provides information on which genes and pathways have higher transcript abundance and may contribute to a host phenotype. The IBDMDB dataset would be a good testing ground for training ML models, as it has metatranscriptomics data, and disease metadata.     
     As a pilot experiment, we trained 7 machine learning models (decision tree, logistic regression, SVM, Naive Bayes, K-nearest neighbor, random forest and multi-layer perceptron) using the pathway abundance data extracted from the metatranscriptomics data from the HMP2 cohort in IBDMDB. A majority voting consensus model was also generating using the outputs of the 7 individual trained models.     
 ![Consensus_CM](https://github.com/NCBI-Hackathons/Metatranscriptomics_Pilot/blob/master/Consensus_Train_Test.png?raw=true)    
-Confusion matrix of the consensus model for the training set(left) and test set (right). nonIBD: no Inflammatory Bowel Disease. UC: Ulcerative colitis. CD: Crohn's Disease. 
+Confusion matrix of the consensus model for the training set(left) and test set (right). nonIBD: no Inflammatory Bowel Disease. UC: Ulcerative colitis. CD: Crohn's Disease.     
+Individual models and code [here](https://github.com/NCBI-Hackathons/Metatranscriptomics_Pilot/blob/master/jupyter/ML%20models%20for%20IBD%20disease%20classification.ipynb)
 
 **6. Inferring metabolomic profiles from metatranscriptomic data (can we avoid doing LC-MS??)**     
     The IBDMDB dataset is a comprehensive multi-omics dataset that includes metatranscriptomics and metabolomics data. Generating both metatranscriptomic and metabolomic data can be labor-intensive, time-consuming and expensive. Moreover, MS often cannot distinguish between highliy similar metabolites **[REF]**, and transcriptomics would potentially provide more detailed information on which metabolic processes are active. Therefore, it would be advantageous to be able to infer the metabolomic profile of a sample *in silico* using metatranscriptomic data. Flux Balance Analysis (Feist et al., 2007; Orth et al., 2010) is a potential approach that can be applied.     
