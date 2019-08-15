@@ -81,19 +81,23 @@ Sample Collection: DNA and RNA collected from the same stool sample, metagenomic
 Comparison of DNA and RNA abundance    
 ![DNAvsRNA](https://www.pnas.org/content/pnas/111/22/E2329/F4.medium.gif)    
     
-1. Indentify persisters/dormant species in a community    
-    RNA <<< DNA genome wide (or possibly just with 16S rRNA<<16S rDNA) for specific organism
-2. Which genes are differentially expressed depending on their genetic context?    
-    Same gene has high variance in RNA coming from different species in the same sample    
-    Can this be explained by methylation patterns? different regulatory elements?     
-3. Which genes (across samples) vary a lot in their expression, but not in their DNA copy number?     
-    Same gene has high variance in RNA (and low variance in DNA) across metagenomic samples
-![Fig3](https://www.pnas.org/content/pnas/111/22/E2329/F6.large.jpg?width=800&height=600&carousel=1)
-    
+**1. Identify persisters/dormant species in a community**    
+    Persisters are often defined as metabolically inactive bacteria, characterized by arrested growth, low ATP levels, and low mRNA expression. Bacteria can enter a persister state when exposed to supra-lethal concentrations of antibiotic, and can resume growth after the antibiotic is removed from the environment. Thus, persistence is a form of transient antibiotic tolerance, and can cause treatment failure and relapse of infection in the clinic (even in the absence of antibiotic resistance). It is therefore crucial to be able to detect persisters in clinical samples. One possible method of detection of persisters is genome-wide absence of RNA transcripts, but a presence of genomic DNA. This can be accomplished by considering the mean or median RNA vs DNA abundances across all pathways of each individual species.
+
+    ![Bvulgatus](https://github.com/NCBI-Hackathons/Metatranscriptomics_Pilot/blob/master/g__Bacteroides.s__Bacteroides_vulgatus.png?raw=true)     
+    Mean RNA and DNA abundances for Bacteroides vulgatus. Each point represents a patient sample. Most patients have lower (relative) amounts of RNA from this organism compared to DNA.     
+
+**2. Which genes/pathways are differentially expressed depending on their genetic context?**    
+    Homologs of the same gene may be differentially expressed depending on which bacterial species they appear in, despite being in the same environment. This may result in an oversimplification/misinterpretation of metatranscriptomic data. For example, one gene/pathway may be found in high abundance in two very different samples, due to this gene being upregulated in response to different cues, in different organisms. These two cases of high transcript abundance are not biologically equivalent. 
+    Can this be explained by methylation patterns? different regulatory elements in different organisms affecting homologs?     
+**3. Which genes/pathways (across samples) vary a lot in their expression, but not in their DNA copy number?**     
+    Similar to how the same genome in a human can yield vastly different cell types, similar metagenomic compositions in microbial communities can have vastly different transcriptional/functional profiles. While for most genes/pathways there may be a strong correlation between RNA and DNA abundance, there are examples of pathways where DNA abundance does not vary much across samples, but RNA abundance does. 
+![FUC-RHAMCAT](https://github.com/NCBI-Hackathons/Metatranscriptomics_Pilot/blob/master/FUC-RHAMCAT-PWY.png?raw=true)    
+Fucose-rhamalose catabolism pathway is an example of low variability in terms of DNA abundance, but high variability in RNA abundance.     
 ~~4. Is the taxonomic profile we get from MetaTrans similar to one from metagenomic taxonomic profiles reported?~~    
     The MetaTrans paper shows some differences between 16S rRNA profiles and 19S rDNA profiles. They attribute this to 16S rDNA not being able to capture the "active" microbial community. 
     
-5. Try to classify clinical outcome (IBD/CD/UC vs healthy) based on metatranscriptomic profiles    
-    use IBDMDB dataset
-6. Inferring metabolomic profiles from metatranscriptomic data (can we avoid doing LC-MS??)     
-    use IBDMDB dataset
+**5. Try to classify clinical outcome (IBD/CD/UC vs healthy) based on metatranscriptomic profiles**    
+    Existing studies aim to classify healthy vs diseased patients based on NGS data. This has not yet been attempted with metatranscriptomic data (**check if true**), which potentially has richer and more informative features than metagenomic or 16S data. The IBDMDB dataset would be a good testing ground for training ML models, as it has metatranscriptomics data, and disease metadata.     
+**6. Inferring metabolomic profiles from metatranscriptomic data (can we avoid doing LC-MS??)**     
+    The IBDMDB dataset is a comprehensive multi-omics dataset that includes metatranscriptomics and metabolomics data. Generating both metatranscriptomic and metabolomic data can be labor-intensive, time-consuming and expensive. (**Why transcriptomics -> metabolomics and not the other way around? Which is more expensive/accessible?**) Therefore, it would be advantageous to be able to infer the metabolomic profile of a sample *in silico* using metatranscriptomic data. 
