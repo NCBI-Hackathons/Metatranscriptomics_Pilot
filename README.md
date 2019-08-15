@@ -49,11 +49,13 @@ From SqueezeMeta paper: comparison of different methods:
 ![Comparison table](https://www.frontiersin.org/files/Articles/425882/fmicb-09-03349-HTML/image_m/fmicb-09-03349-t001.jpg)
 ## Ideas:    
 1.) Looking for mismatch between DNA and RNA, as in low signal in DNA high in RNA and visa versa.        
-2.) Able to process short OR long read data    
+2.) Able to process short OR long read data - *SqueezeMeta claims to do this*    
 3.) If methylation data is available, match methylation data with transcription     
-4.) “Dark Matter” of metatranscriptomics data: how do we use seq’s that don’t align to any reference genome? How to get functional insight into unaligned reads     
+4.) “Dark Matter” of metatranscriptomics data: how do we use seq’s that don’t align to any reference genome? How to get functional insight into unaligned reads - *HUMANn2 addresses this*     
 5.) Normalization of expression data based on taxon abundance    
-6.) Co-assembly of multiple metagenomes    
+5.b) Take gene copy number into account (same gene may be duplicated in the same genome)        
+6.) Co-assembly of multiple metagenomes - *SqueezeMeta addresses this*     
+
 
 ## Datasets:    
 Human Stool samples; metagenomic (DNA) and metatranscriptomic (RNA) sequencing from 8 people.     
@@ -66,7 +68,8 @@ PRJNA406858
 
 IBDBMB (The Inflammatory Bowel Disease Multi'omics Database)    
 https://ibdmdb.org/    
-735 MATCHED Metatranscriptomics and Metagenomics datasets from human stool  
+735 MATCHED Metatranscriptomics and Metagenomics datasets from human stool     
+Also includes 16S, proteomics, metabolomics, host transcriptomics and serology data. Also includes rich metadata. 
 
 ## A potential method for DNA/RNA comparison: 
 Relating the metatranscriptome and metagenome of the human gut    
@@ -78,13 +81,19 @@ Sample Collection: DNA and RNA collected from the same stool sample, metagenomic
 Comparison of DNA and RNA abundance    
 ![DNAvsRNA](https://www.pnas.org/content/pnas/111/22/E2329/F4.medium.gif)    
     
-1. Indentify persisters in a community    
-    RNA <<< DNA genome wide for specific organism
+1. Indentify persisters/dormant species in a community    
+    RNA <<< DNA genome wide (or possibly just with 16S rRNA<<16S rDNA) for specific organism
 2. Which genes are differentially expressed depending on their genetic context?    
-    Same gene has high variance in RNA coming from different species in the same sample
+    Same gene has high variance in RNA coming from different species in the same sample    
+    Can this be explained by methylation patterns? different regulatory elements?     
 3. Which genes (across samples) vary a lot in their expression, but not in their DNA copy number?     
     Same gene has high variance in RNA (and low variance in DNA) across metagenomic samples
 ![Fig3](https://www.pnas.org/content/pnas/111/22/E2329/F6.large.jpg?width=800&height=600&carousel=1)
     
-4. Is the taxonomic profile we get from MetaTrans similar to one from metagenomic taxonomic profiles reported?    
-
+~~4. Is the taxonomic profile we get from MetaTrans similar to one from metagenomic taxonomic profiles reported?~~    
+    The MetaTrans paper shows some differences between 16S rRNA profiles and 19S rDNA profiles. They attribute this to 16S rDNA not being able to capture the "active" microbial community. 
+    
+5. Try to classify clinical outcome (IBD/CD/UC vs healthy) based on metatranscriptomic profiles    
+    use IBDMDB dataset
+6. Inferring metabolomic profiles from metatranscriptomic data (can we avoid doing LC-MS??)     
+    use IBDMDB dataset
