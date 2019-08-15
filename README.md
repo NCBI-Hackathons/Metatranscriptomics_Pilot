@@ -17,8 +17,6 @@ http://huttenhower.sph.harvard.edu/humann2
 * translated-search for unclassified genes
 * gene family and pathway abundance (RPKM)
 
-![Image description](http://huttenhower.sph.harvard.edu/sites/default/files/humann2_diamond_500x500.jpg)
-
 
 **SAMSA2** (Westreich et al., 2018):     
 https://transcript.github.io/samsa2/ 
@@ -27,7 +25,6 @@ https://transcript.github.io/samsa2/
 * align and annotate
 * subsystems/RefSeq analysis (DEseq2)
 
-![Image description](https://www.biorxiv.org/content/biorxiv/early/2017/09/29/195826/F1.medium.gif)
 
 **MetaTrans** (Martinez et al., 2016):     
 http://www.metatrans.org/
@@ -35,19 +32,18 @@ http://www.metatrans.org/
 * use rRNA for OTU analysis (QIIME)
 * use non rRNA for mapping, functional assignment, differential expression (DEseq2)
 
-![Image description](https://media.nature.com/m685/nature-assets/srep/2016/160523/srep26447/images_hires/srep26447-f1.jpg)
 
 **SqueezeMeta** (Tamames and Puente-Sanchez, 2019):     
 * Accommodates nanopore long reads    
 * Metagenomics and metatranscriptomics    
 * Co-assembly of multiple metagenomes simultaneously    
 
-![Image description](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6353838/bin/fmicb-09-03349-g001.jpg)
 
-From SqueezeMeta paper: comparison of different methods:    
-![Comparison table](https://www.frontiersin.org/files/Articles/425882/fmicb-09-03349-HTML/image_m/fmicb-09-03349-t001.jpg)
+From SqueezeMeta paper: comparison of different tools:    
+![Comparison table](https://www.frontiersin.org/files/Articles/425882/fmicb-09-03349-HTML/image_m/fmicb-09-03349-t001.jpg)    
+
 ## Ideas:    
-1.) Looking for mismatch between DNA and RNA, as in low signal in DNA high in RNA and visa versa.        
+1.) **Looking for mismatch between DNA and RNA, as in low signal in DNA high in RNA and vice-versa.** - *This is the idea we explored in more detail*        
 2.) Able to process short OR long read data - *SqueezeMeta claims to do this*    
 3.) If methylation data is available, match methylation data with transcription     
 4.) “Dark Matter” of metatranscriptomics data: how do we use seq’s that don’t align to any reference genome? How to get functional insight into unaligned reads - *HUMANn2 addresses this*     
@@ -62,16 +58,8 @@ From SqueezeMeta paper: comparison of different methods:
 | IBDBMDB           | matched MGX and MTX | 735               | Lloyd-Price et al., 2019 | PRJNA398089   | https://ibdmdb.org/ | Metabolomics, host transcriptomics, 16S, viromics, proteomics, serology |
 | Human Stool pilot | matched MGX and MTX | 8                 | Franzosa et al., 2019    | PRJNA188481   |                     |                                                                         |
 | Activated sludge  | matched MGX and MTX | 3                 | Liu et al., 2019         | PRJNA406858   |                     |                                                                         |
-## A potential method for DNA/RNA comparison: 
-Relating the metatranscriptome and metagenome of the human gut    
-https://www.pnas.org/content/111/22/E2329.long    
+## Applications/Use-Cases    
 
-Sample Collection: DNA and RNA collected from the same stool sample, metagenomics and metatranscriptomics processed separately        
-![SampleCollection](https://www.pnas.org/content/pnas/111/22/E2329/F1.medium.gif)    
-    
-Comparison of DNA and RNA abundance    
-![DNAvsRNA](https://www.pnas.org/content/pnas/111/22/E2329/F4.medium.gif)    
-    
 **1. Identify persisters/dormant species in a community**    
     Persisters are often defined as metabolically inactive bacteria, characterized by arrested growth, low ATP levels, and low mRNA expression. Bacteria can enter a persister state when exposed to supra-lethal concentrations of antibiotic, and can resume growth after the antibiotic is removed from the environment (Fisher et al., 2017). Thus, persistence is a form of transient antibiotic tolerance, and can cause treatment failure and relapse of infection in the clinic (even in the absence of antibiotic resistance). It is therefore crucial to be able to detect persisters in clinical samples. One possible method of detection of persisters is genome-wide absence of RNA transcripts, but a presence of genomic DNA. This can be accomplished by considering the mean or median RNA vs DNA abundances across all pathways of each individual species.
 
