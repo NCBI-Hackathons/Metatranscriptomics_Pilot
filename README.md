@@ -63,8 +63,9 @@ From SqueezeMeta paper: comparison of different tools:
 **1. Identify persisters/dormant species in a community**    
     Persisters are often defined as metabolically inactive bacteria, characterized by arrested growth, low ATP levels, and low mRNA expression. Bacteria can enter a persister state when exposed to supra-lethal concentrations of antibiotic, and can resume growth after the antibiotic is removed from the environment (Fisher et al., 2017). Thus, persistence is a form of transient antibiotic tolerance, and can cause treatment failure and relapse of infection in the clinic (even in the absence of antibiotic resistance). It is therefore crucial to be able to detect persisters in clinical samples. One possible method of detection of persisters is genome-wide absence of RNA transcripts, but a presence of genomic DNA. This can be accomplished by considering the mean or median RNA vs DNA abundances across all pathways of each individual species.
 
+![Ecoli](https://github.com/NCBI-Hackathons/Metatranscriptomics_Pilot/blob/master/g__Escherichia.s__Escherichia_coli.png?raw=true)
 ![Bvulgatus](https://github.com/NCBI-Hackathons/Metatranscriptomics_Pilot/blob/master/g__Bacteroides.s__Bacteroides_vulgatus.png?raw=true)     
-Mean RNA and DNA abundances for Bacteroides vulgatus. Each point represents a patient sample. Most patients have lower (relative) amounts of RNA from this organism compared to DNA.     
+Mean RNA and DNA abundances for Eschericia coli (top) and Bacteroides vulgatus (bottom). Each point represents a patient sample. Most patients have lower (relative) amounts of RNA from B. vulgatus compared to DNA, and the converse is true for E. coli.     
 [Jupyter notebook - generation of this figure](https://github.com/NCBI-Hackathons/Metatranscriptomics_Pilot/blob/master/Pathways%20MGX%20vs%20MTX.ipynb)    
 
 **2. Which genes/pathways are differentially expressed depending on their genetic context?**    
