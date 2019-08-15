@@ -95,7 +95,7 @@ Mean RNA and DNA abundances for Bacteroides vulgatus. Each point represents a pa
 ![FUC-RHAMCAT](https://github.com/NCBI-Hackathons/Metatranscriptomics_Pilot/blob/master/FUC-RHAMCAT-PWY.png?raw=true)    
 Fucose-rhamalose catabolism pathway is an example of low variability in terms of DNA abundance, but high variability in RNA abundance.     
 ~~4. Is the taxonomic profile we get from MetaTrans similar to one from metagenomic taxonomic profiles reported?~~    
-    The MetaTrans paper shows some differences between 16S rRNA profiles and 19S rDNA profiles. They attribute this to 16S rDNA not being able to capture the "active" microbial community. 
+    The MetaTrans paper shows some differences between 16S rRNA profiles and 16S rDNA profiles. They attribute this to 16S rDNA not being able to capture the "active" microbial community. 
     
 **5. Try to classify clinical outcome (IBD/CD/UC vs healthy) based on metatranscriptomic profiles**    
     Existing studies aim to classify healthy vs diseased patients based on NGS data. This has not yet been attempted with metatranscriptomic data (**check if true**), which potentially has richer and more informative features than metagenomic or 16S data. The IBDMDB dataset would be a good testing ground for training ML models, as it has metatranscriptomics data, and disease metadata.     
