@@ -1,5 +1,5 @@
 # Metatranscriptomics Pilot
-A Pilot Project for scoping an upcoming hackathon focused on metatranscriptomics including topics such as Read Counts, Novel Transcripts and Population Level Functions    
+A Pilot Project for scoping an upcoming hackathon focused on metatranscriptomics including topics such as Read Counts, Novel Transcripts and Population Level Functions.     
 
 **Authors:**    
 Allissa Dillman  
@@ -7,7 +7,7 @@ Defne Surujon
 Shurjo Sen    
 
 
-## Potential Transcriptomic Tools/Pipelines:     
+## Existing Transcriptomic Tools/Pipelines:     
 
 **HUMAnN2** (Franzosa et al., 2018):     
 http://huttenhower.sph.harvard.edu/humann2
@@ -90,6 +90,10 @@ Fucose-rhamalose catabolism pathway is an example of low variability in terms of
     
 **5. Try to classify clinical outcome (IBD/CD/UC vs healthy) based on metatranscriptomic profiles**    
     Existing studies aim to classify healthy vs diseased patients based on NGS data (Bang et al., 2019; Pasolli et al., 2016). Early analysis of metatranscriptomic data has has identified differentially expressed pathways in periodontal disease when compared to healthy oral microbial communities (Jorth et al., 2014). Transcriptomic profiling data potentially has richer and more informative features than metagenomic or 16S data; since it provides information on which genes and pathways have higher transcript abundance and may contribute to a host phenotype. The IBDMDB dataset would be a good testing ground for training ML models, as it has metatranscriptomics data, and disease metadata.     
+    As a pilot experiment, we trained 7 machine learning models (decision tree, logistic regression, SVM, Naive Bayes, K-nearest neighbor, random forest and multi-layer perceptron) using the pathway abundance data extracted from the metatranscriptomics data from the HMP2 cohort in IBDMDB. A majority voting consensus model was also generating using the outputs of the 7 individual trained models.     
+![Consensus_CM](https://github.com/NCBI-Hackathons/Metatranscriptomics_Pilot/blob/master/Consensus_Train_Test.png?raw=true)    
+Confusion matrix of the consensus model for the training set(left) and test set (right). nonIBD: no Inflammatory Bowel Disease. UC: Ulcerative colitis. CD: Crohn's Disease. 
+
 **6. Inferring metabolomic profiles from metatranscriptomic data (can we avoid doing LC-MS??)**     
     The IBDMDB dataset is a comprehensive multi-omics dataset that includes metatranscriptomics and metabolomics data. Generating both metatranscriptomic and metabolomic data can be labor-intensive, time-consuming and expensive. Moreover, MS often cannot distinguish between highliy similar metabolites **[REF]**, and transcriptomics would potentially provide more detailed information on which metabolic processes are active. Therefore, it would be advantageous to be able to infer the metabolomic profile of a sample *in silico* using metatranscriptomic data. Flux Balance Analysis (Feist et al., 2007; Orth et al., 2010) is a potential approach that can be applied.     
     
